@@ -7,14 +7,14 @@ pagehelper:
 spring:
   datasource:
     druid:
-      url:  jdbc:mysql://47.106.90.96:3306/litemall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+      url:  jdbc:mysql://47.106.90.96:3306/litemall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false&autoReconnect=true
       driver-class-name:  com.mysql.jdbc.Driver
       username:  root
       password:  1992
       initial-size:  10
       max-active:  50
       min-idle:  10
-      max-wait:  60000
+      max-wait:  6000000
       pool-prepared-statements:  true
       max-pool-prepared-statement-per-connection-size:  20
       validation-query:  SELECT 1 FROM DUAL
